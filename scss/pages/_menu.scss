@@ -1,7 +1,7 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.menuBanner {
+.menu {
   padding: 5rem 0;
   &__title {
     @include centerAll;
@@ -12,7 +12,7 @@
       font-family: $font-primary;
     }
   }
-  &__wrapper {
+  &__card {
     @include evenGrid(1,1rem);
   }
   &__items {
@@ -33,8 +33,11 @@
     }
   }
   &__img {
-    border-radius: 2rem;
-    width:50rem;
-    justify-items: center;
+    width: 68rem;
+    justify-self: center;
+    img {
+      width: 100%;
+      border-radius: 2rem;
+    }
   }
 }
