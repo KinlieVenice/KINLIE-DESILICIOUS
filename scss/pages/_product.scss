@@ -34,9 +34,6 @@
   &__right {
     align-items: center;
     margin: 0 2rem;
-    a {
-        @include evenGrid(2, 2rem);
-    }
   }
 
   &__search {
@@ -60,6 +57,11 @@
     p {
          color: $clr--light;
          margin-bottom: 1rem;
+    }
+  }
+  &__info {
+    a {
+      @include unevenGrid(2fr 1fr, 2rem);
     }
   }
 }

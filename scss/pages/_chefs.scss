@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .chefList {
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
   &__title {
     @include centerAll;
     margin-bottom: 2rem;
@@ -27,6 +27,15 @@
     p {
         font-weight: bold;
         color: $clr--secondary;
+    }
+  }
+}
+
+// MOBILE | MENU
+@include mediaQuery(520px) {
+  .chefList {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
     }
   }
 }

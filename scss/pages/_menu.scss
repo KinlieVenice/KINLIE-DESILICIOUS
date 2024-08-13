@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .menu {
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
   &__title {
     @include centerAll;
     flex-direction: column;
@@ -38,6 +38,18 @@
     img {
       width: 100%;
       border-radius: 2rem;
+    }
+  }
+}
+
+// MOBILE | MENU
+@include mediaQuery(520px)  {
+  .menu {
+    &__items {
+       @include evenGrid(1, 1rem);
+    }
+    &__img {
+    width: 28rem;
     }
   }
 }
