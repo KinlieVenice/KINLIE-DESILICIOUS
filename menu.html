@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -36,7 +37,7 @@
     <!-- MENU BANNER -->
     <section class="menu bg--primary">
       <div class="container">
-        <div class="menu__card">
+        <div class="menu__card" data-aos="flip-down">>
           <div class="menu__title">
             <h2>Indian Beef Items</h2>
           </div>
@@ -116,10 +117,12 @@
               </p>
             </div>
           </div>
-          <div class="menu__img"><img src="./IMG/indian-items.jpg" alt="" /></div>
+          <div class="menu__img">
+            <img src="./IMG/indian-items.jpg" alt="" />
+          </div>
         </div>
 
-        <div class="menu__card mt--3">
+        <div class="menu__card mt--3" data-aos="zoom-in">
           <div class="menu__title">
             <h2>Chicken Items</h2>
           </div>
@@ -199,10 +202,12 @@
               </p>
             </div>
           </div>
-          <div class="menu__img"><img src="./IMG/chicken-items.jpg" alt="" /></div>
+          <div class="menu__img">
+            <img src="./IMG/chicken-items.jpg" alt="" />
+          </div>
         </div>
 
-        <div class="menu__card mt--3">
+        <div class="menu__card mt--3" data-aos="flip-down">>
           <div class="menu__title">
             <h2>Dessert Recipe</h2>
           </div>
@@ -282,7 +287,9 @@
               </p>
             </div>
           </div>
-          <div class="menu__img"><img src="./IMG/dessert-items.jpg" alt="" /></div>
+          <div class="menu__img">
+            <img src="./IMG/dessert-items.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -342,5 +349,9 @@
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

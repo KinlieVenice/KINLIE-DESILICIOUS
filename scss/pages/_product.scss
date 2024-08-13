@@ -1,0 +1,65 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.productList {
+  padding: 5rem 0;
+  &__wrapper {
+    @include unevenGrid(1fr 20rem, 2rem);
+  }
+  &__cards {
+    @include evenGrid(3, 2rem);
+    justify-items: center;
+    justify-self: end;
+    width: 63rem;
+  }
+  &__card {
+    padding: 1.5rem 3.5rem 2.5rem 3.5rem;
+    text-align: center;
+    border: 2px solid $clr--secondary;
+    border-radius: 2rem;
+    &:hover {
+        transform: scale(1.1);
+    }
+  }
+  &__details {
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      color: $clr--secondary;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__right {
+    align-items: center;
+    margin: 0 2rem;
+    a {
+        @include evenGrid(2, 2rem);
+    }
+  }
+
+  &__search {
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    ::placeholder {
+        color: $clr--light;
+    }
+  }
+
+  &__category {
+    padding: 2rem;
+    border-radius: 2rem;
+    h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $clr--light;
+        margin-bottom: 1rem;
+    }
+    p {
+         color: $clr--light;
+         margin-bottom: 1rem;
+    }
+  }
+}

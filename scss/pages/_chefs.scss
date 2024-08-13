@@ -1,0 +1,32 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.chefList {
+  padding: 5rem 0;
+  &__title {
+    @include centerAll;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 2.5rem;
+      font-family: $font-primary;
+    }
+  }
+  &__wrapper {
+    @include evenGrid(4, 5rem);
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+  &__card {
+    img {
+      border-radius: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-weight: bold;
+        color: $clr--secondary;
+    }
+  }
+}

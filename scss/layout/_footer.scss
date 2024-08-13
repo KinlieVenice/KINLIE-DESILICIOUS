@@ -45,13 +45,41 @@
     display: flex;
     gap: 2rem;
     a {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
   }
 
   .btn {
     position: absolute;
     right: -2rem;
     top: 0.5rem;
+  }
+}
+
+// MOBILE | HOME MENU
+@include mediaQuery(520px) {
+  .footer {
+    padding: 3rem 0;
+    &__wrapper {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__center {
+      gap: 3rem;
+      justify-content: center;
+    }
+
+    &__social {
+      justify-content: center;
+    }
   }
 }
