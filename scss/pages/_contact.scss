@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .contact {
-  padding: 5rem 0rem;
+  padding: 10rem 0rem 5rem 0;
   &__wrapper {
     padding: 0 15rem;
     @include evenGrid(1fr, 3rem);
@@ -19,7 +19,7 @@
       }
     }
 
-    img {
+    iframe {
       border-radius: 2rem;
     }
   }
@@ -70,4 +70,21 @@
   &__button {
     text-align: center;
   }
+}
+
+// MOBILE RESPONSIVE | CONTACT {
+@media (max-width: 520px) {
+  .contact {
+    &__wrapper {
+      padding: 0;
+    }
+     &__top { 
+      ul {
+        gap: 2rem;
+      }
+      width: 28rem;
+      iframe {
+        width: 20rem;
+      }
+  }}
 }

@@ -853,7 +853,7 @@ img {
   }
 }
 .blogs {
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
 }
 .blogs__wrapper {
   display: grid;
@@ -875,19 +875,19 @@ img {
   border-radius: 2rem;
 }
 
+@media screen and (max-width: 520px) {
+  .blogs__card {
+    padding: 0rem;
+  }
+}
 .chefList {
   padding: 10rem 0 5rem 0;
 }
-.chefList__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.chefList__title h2 {
+.chefList h2 {
   font-size: 2.5rem;
   font-family: "Patrick Hand", cursive;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .chefList__wrapper {
   display: grid;
@@ -915,7 +915,7 @@ img {
   }
 }
 .contact {
-  padding: 5rem 0rem;
+  padding: 10rem 0rem 5rem 0;
 }
 .contact__wrapper {
   padding: 0 15rem;
@@ -935,7 +935,7 @@ img {
   font-size: 1.5rem;
   color: #dd1d01;
 }
-.contact__top img {
+.contact__top iframe {
   border-radius: 2rem;
 }
 .contact__bottom h3 {
@@ -976,6 +976,20 @@ img {
   text-align: center;
 }
 
+@media (max-width: 520px) {
+  .contact__wrapper {
+    padding: 0;
+  }
+  .contact__top {
+    width: 28rem;
+  }
+  .contact__top ul {
+    gap: 2rem;
+  }
+  .contact__top iframe {
+    width: 20rem;
+  }
+}
 .homeBanner {
   padding: 10rem 0 5rem 0;
 }
@@ -1353,7 +1367,7 @@ img {
   }
 }
 .productList {
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
 }
 .productList__wrapper {
   display: grid;
@@ -1366,7 +1380,7 @@ img {
   gap: 2rem;
   justify-items: center;
   justify-self: end;
-  width: 63rem;
+  padding-left: 5rem;
 }
 .productList__card {
   padding: 1.5rem 3.5rem 2.5rem 3.5rem;
@@ -1417,4 +1431,28 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .productList__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding-left: 0rem;
+  }
+  .productList__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    padding-left: 0rem;
+    justify-self: center;
+  }
+  .productList__right {
+    grid-row: 1/2;
+    max-width: 20rem;
+    justify-self: center;
+  }
+  .productList__right input {
+    width: 15rem;
+  }
 }/*# sourceMappingURL=main.min.css.map */

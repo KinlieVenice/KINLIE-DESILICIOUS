@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .productList {
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
   &__wrapper {
     @include unevenGrid(1fr 20rem, 2rem);
   }
@@ -10,7 +10,8 @@
     @include evenGrid(3, 2rem);
     justify-items: center;
     justify-self: end;
-    width: 63rem;
+    // width: 63rem;
+    padding-left: 5rem;
   }
   &__card {
     padding: 1.5rem 3.5rem 2.5rem 3.5rem;
@@ -18,7 +19,7 @@
     border: 2px solid $clr--secondary;
     border-radius: 2rem;
     &:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
   &__details {
@@ -41,7 +42,7 @@
     border-radius: 2rem;
     margin-bottom: 1rem;
     ::placeholder {
-        color: $clr--light;
+      color: $clr--light;
     }
   }
 
@@ -49,19 +50,43 @@
     padding: 2rem;
     border-radius: 2rem;
     h3 {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid $clr--light;
-        margin-bottom: 1rem;
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $clr--light;
+      margin-bottom: 1rem;
     }
     p {
-         color: $clr--light;
-         margin-bottom: 1rem;
+      color: $clr--light;
+      margin-bottom: 1rem;
     }
   }
   &__info {
     a {
       @include unevenGrid(2fr 1fr, 2rem);
+    }
+  }
+}
+
+// MOBILE RESPONSIVE | PRODUCTS
+@include mediaQuery(520px) {
+  .productList {
+    &__wrapper {
+      @include evenGrid(1, 2rem);
+      padding-left: 0rem;
+    }
+
+    &__cards {
+      @include evenGrid(1, 1.5rem);
+      padding-left: 0rem;
+      justify-self: center;
+    }
+    &__right {
+      grid-row: 1 / 2;
+      max-width: 20rem;
+      justify-self: center;
+      input {
+        width: 15rem;
+      }
     }
   }
 }
