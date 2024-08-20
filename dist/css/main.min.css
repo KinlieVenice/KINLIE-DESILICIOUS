@@ -970,7 +970,7 @@ img {
   gap: 1rem;
 }
 .contact__name input, .contact__name .contact__bottom textarea, .contact__bottom .contact__name textarea {
-  width: 29.5rem;
+  width: 31rem;
 }
 .contact__title {
   text-align: center;
@@ -987,7 +987,7 @@ img {
     width: 28rem;
   }
   .contact__top ul {
-    gap: 2rem;
+    gap: 1rem;
   }
   .contact__top iframe {
     width: 100%;
@@ -997,7 +997,7 @@ img {
     width: 100%;
   }
   .contact__name input, .contact__name .contact__bottom textarea, .contact__bottom .contact__name textarea {
-    width: 14rem;
+    width: 13.8rem;
   }
 }
 .homeBanner {
