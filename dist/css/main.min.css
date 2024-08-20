@@ -908,6 +908,9 @@ img {
 }
 
 @media screen and (max-width: 520px) {
+  .chefList {
+    width: 100%;
+  }
   .chefList__wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

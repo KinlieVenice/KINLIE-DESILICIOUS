@@ -34,8 +34,10 @@
 // MOBILE | MENU
 @include mediaQuery(520px) {
   .chefList {
+    width: 100%;
     &__wrapper {
       @include evenGrid (1, 1rem);
+      
     }
 
     &__card  {
